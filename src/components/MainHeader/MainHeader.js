@@ -7,7 +7,7 @@ const MainHeader = () => {
     <MainHeaderContainer>
       <MainHeaderTitle>Twitch streamers</MainHeaderTitle>
       <StatusItem index={1} active={true}>
-        <StatusItemIcon color={"#4A5E82"} />
+        <StatusItemIcon color={"#5C5457"} />
         <StatusIconLabel>All</StatusIconLabel>
       </StatusItem>
       <StatusItem index={2}>
