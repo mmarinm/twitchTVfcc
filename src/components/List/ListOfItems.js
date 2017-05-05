@@ -7,15 +7,15 @@ import {streamers} from '../../App'
 
 const ListOfItems = ({props}) => {
   const filterFunc = (filter) => {
-    let arrofObjects = range(streamers.length).map((item, index) => {
-      return {
+    let arrofObjects = range(streamers.length).map((item, index) =>
+      ({
         name: props.channels[index],
         logo: props.logos[index],
         url: props.urls[index],
         streaming: props.streaming.indexOf(props.channels[index]) !== -1 ? true : false,
         game: props.game[props.streaming.indexOf(props.channels[index])]
-      }
-    })
+      })
+    );
     if(filter === 'All'){
       return arrofObjects
     }

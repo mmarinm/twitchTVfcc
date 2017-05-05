@@ -48,15 +48,14 @@ class App extends Component {
     componentDidMount() {
 			streamers.map((chnl, indx) =>
 				getChannelInfo(chnl)
-				.then((resp) => {
-					console.log(resp);
-					return this.setState((prevState) => ({
+				.then((resp) =>
+					this.setState((prevState) => ({
 						...prevState,
 						channels: [...prevState.channels, resp.error ? resp.error : resp.display_name ],
 						logos: [...prevState.logos, resp.logo],
 						urls: [...prevState.urls, resp.url],
 					}))
-				}
+
 				)
 				.catch((resp) =>
 						console.log(resp)
@@ -64,14 +63,12 @@ class App extends Component {
 			)
 			streamers.map((chnl, indx) =>
 				getStreamInfo(chnl)
-				.then((resp) => {
-					// console.log(resp);
-					return this.setState((prevState) => ({
+				.then((resp) =>
+					this.setState((prevState) => ({
 						...prevState,
 						streaming: [...prevState.streaming, resp.stream === null ? false : resp.stream.channel.display_name],
 						game: [...prevState.game, resp.stream === null ? false: resp.stream.game]
 					}))
-				}
 				)
 				.catch((resp) =>
 						console.log(resp)
