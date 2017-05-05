@@ -27,6 +27,7 @@ export const StatusItem = styled.div`
     if(props.index === 3) return 60 + 'px';
   }}
   background-color: #e1e1e6;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;

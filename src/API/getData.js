@@ -21,3 +21,5 @@ export async function getStreamInfo(channel) {
   // only proceed once second promise is resolved
   return data;
 }
+
+export function filterResults(arr, fitler){}
