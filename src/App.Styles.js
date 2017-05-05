@@ -4,12 +4,11 @@ export const Container = styled.div`
   position: relative;
   margin: 0;
   padding-top:  20px;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #ecf0e7;
-  overflow-y: auto;
   box-sizing: border-box;
 `;
 

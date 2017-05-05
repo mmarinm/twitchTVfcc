@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '../../media';
 
 export const List = styled.div`
   background-color: #5C5457;
@@ -34,9 +35,11 @@ export const Avatar = styled.div`
   border-radius: 50%;
   border: 3px solid #e1e1e6;
   margin: 5px 0 0 20px;
+  ${media.phone`margin: 1px`}
 `
 export const StreamingStatus = styled.div`
   font-style: italic;
   margin-right: 20px;
   display: inherit;
+  ${media.phone`margin: 1px`}
 `

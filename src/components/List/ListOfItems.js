@@ -45,8 +45,6 @@ const ListOfItems = ({props}) => {
       )}
     </List>
   );
-
-
 };
 
 export default ListOfItems

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '../../media';
 
 
 export const MainHeaderContainer = styled.div`
@@ -6,15 +7,18 @@ export const MainHeaderContainer = styled.div`
   height: 100px;
   width: 100%;
   border-bottom: 2px solid #fff;
+  ${media.phone`height: 6em`};  
 `
 export const MainHeaderTitle = styled.h1`
-font-family: 'Oswald', sans-serif;
-font-weight: bold;
-text-transform: uppercase;
-text-align: left;
-margin: 25px;
-font-size: 3em;
-color: #e1e1e6
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 25px;
+  font-size: 2.5em;
+  color: #e1e1e6;
+  ${media.tablet`font-size: 1.5em`};
+  ${media.phone`font-size: 1.2em`};
 `
 
 export const StatusItem = styled.div`
